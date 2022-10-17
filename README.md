@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/carjavi/frontend-backend-code/master/img/markdown_logo.png" height="100" alt=" " /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/carjavi/frontend-backend-code/master/img/frontend_backend.jpg" height="250" alt=" " /></p>
 <br>
 <h1 align="center">Frontend Backend Code</h1> 
 <h4 align="right">Oct 22</h4>
