@@ -37,7 +37,51 @@ function ExecuteChromium() {
 }
 ```
 
+# CCS
 
+ – Imagen responsive de ancho completo
+Para obtener imágenes responsive de ancho completo, lo único que hay que hacer es configurar el ancho del DIV contenedor de la imagen a 100% o dejarlo sin ancho.
+
+Y luego a la etiqueta de la imagen colocarle un ancho del 100%.
+
+En CSS:
+```
+?
+.container {
+width: 100%;
+}
+En HTML:
+
+?
+<div class="container">
+<img  src="image01.jpg" width="100%" />
+</div>
+```
+## CSS Padding
+
+El relleno se utiliza para crear espacio alrededor del contenido de un elemento, dentro de los bordes definidos.
+
+```
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+```
+
+## CSS Grid Layout Module
+
+```
+display: grid / inline-grid;
+```
+
+<br>
+<br>
 
 ---
 Copyright &copy; 2022 [carjavi](https://github.com/carjavi). <br>
