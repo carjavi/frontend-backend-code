@@ -6,18 +6,25 @@
 <img src="https://img.shields.io/badge/OS-Linux%20GNU-yellowgreen">
 <img src="https://img.shields.io/badge/OS-Windows%2011-blue">
 
+<br>
 
-# Launching the browser in 'Full screen' mode
+# Launching the browser in 'Full screen' mode 
+
+> :memo: **Note:** chromium open source of Chrome
 
 command: <br>
-```chromium-browser --[mode] http://example.com``` <br>
-```chromium-browser --[mode] localhost:4000```
+```
+chromium-browser --[mode] http://www.example.com
+chromium-browser --[mode] http://localhost:8080
+chromium-browser --[mode] http://192.168.X.X:8080
+chromium-browser -start-maximized
+```
 
 **Application Mode**: ```chromium-browser --app```. El navegador se inicia sin mostrar ninguna barra de herramientas.
 
-**Full-screen mode**: ```chromium-browser --start-fullscreen```.El navegador se inicia en app. pero ampliado a pantalla completa. Puede presionar la tecla F11 para salir del modo de pantalla completa.
+**Full-screen mode**: ```chromium-browser --start-fullscreen```.El navegador se inicia en app. pero ampliado a pantalla completa. Puede presionar la tecla <kbd>F11</kbd> para salir del modo de pantalla completa.
 
-Kiosk mode: ```chromium-browser --kiosk```. El navegador se inicia en modo de pantalla completa, pero no responde a la tecla F11 ni a ningún comando para que cambie de tarea.
+Kiosk mode: ```chromium-browser --kiosk```. El navegador se inicia en modo de pantalla completa, pero no responde a la tecla F11 ni a ningún comando para que cambie de tarea. La única forma de salir de la ventana es <kbd>Alt+Tab</kbd> out o <kbd>Alt+F4</kbd> para cerrar la ventana por completo.
 
 sample:
 ```
@@ -36,6 +43,16 @@ function ExecuteChromium() {
     });
 }
 ```
+## Launching the browser in SSH 
+Se debe indicar que se iniciara el browser en pantalla predeterminada. ***DISPLAY=:0*** <br>
+Sample:
+```
+DISPLAY=:0 chromium-browser --kiosk --app=localhost:8080
+DISPLAY=:0 chromium-browser http://localhost:8080
+```
+## 
+chrome
+
 
 # CCS
 
